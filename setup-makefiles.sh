@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=x5max_pro
-VENDOR=doogee
+DEVICE=hct6737m_65_n
+VENDOR=gretel
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
