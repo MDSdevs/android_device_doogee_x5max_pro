@@ -28,12 +28,12 @@ persist.sys.display.clearMotion=0
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/doogee/x5max_pro/x5max_pro-vendor.mk)
+$(call inherit-product-if-exists, vendor/gretel/hct6737m_65_n/hct6737m_65_n-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/doogee/x5max_pro/overlay
-PRODUCT_PACKAGE_OVERLAYS += device/doogee/x5max_pro/overlay # enable this to be able overlay a default wallpaper
+DEVICE_PACKAGE_OVERLAYS += device/gretel/hct6737m_65_n/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/gretel/hct6737m_65_n/overlay # enable this to be able overlay a default wallpaper
 
-LOCAL_PATH := device/doogee/x5max_pro
+LOCAL_PATH := device/gretel/hct6737m_65_n
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -216,7 +216,7 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_hct6737m_65_n
 PRODUCT_DEVICE := hct6737m_65_n
-PRODUCT_LOCALES := en_US en_GB ru_RU uk_UA
+PRODUCT_LOCALES := en_US en_GB es_ES
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
