@@ -6,3 +6,4 @@ ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 # include the non-open-source counterpart to this file
 -include vendor/doogee/hct6737m_65_n/AndroidBoardVendor.mk
+#
