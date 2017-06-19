@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=x5max_pro
-export VENDOR=doogee
+export DEVICE=hct6737m_65_n
+export VENDOR=gretel
 
 if [ $# -eq 0 ]; then
   SRC=adb
