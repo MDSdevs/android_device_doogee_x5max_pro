@@ -1,8 +1,8 @@
 # inherit from the proprietary version
--include vendor/doogee/x5max_pro/BoardConfigVendor.mk
+-include vendor/gretel/hct6737m_65_n/BoardConfigVendor.mk
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/doogee/x5max_pro/include
+TARGET_SPECIFIC_HEADER_PATH := device/gretel/hct6737m_65_n/include
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6737m
@@ -62,15 +62,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12213288960
 BOARD_CACHEIMAGE_PARTITION_SIZE := 419430400
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/doogee/x5max_pro/kernel
+TARGET_PREBUILT_KERNEL := device/gretel/hct6737m_65_n/kernel
 #BOARD_CUSTOM_BOOTIMG_MK := device/doogee/x5max_pro/bootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000 --board 1472186745
 BOARD_CUSTOM_BOOTIMG := true
 
 TARGET_KMODULES := true
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := x5max_pro,x5max_pro_doogee,doogee_x5max_pro,doogee_x5max_pro,"Doogee X5 Max Pro",X5max_PRO,X5MAX_Pro
 
 #COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -79,7 +76,7 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # EGL
-BOARD_EGL_CFG := device/doogee/x5max_pro/configs/egl.cfg
+BOARD_EGL_CFG := device/gretel/hct6737m_65_n/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
@@ -94,7 +91,7 @@ MTK_HARDWARE := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/doogee/x5max_pro/ril/
+BOARD_RIL_CLASS := ../../../device/gretel/hct6737m_65_n/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -114,14 +111,14 @@ WIFI_DRIVER_FW_PATH_P2P:=P2P
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/doogee/x5max_pro/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/gretel/hct6737m_65_n/bluetooth
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # CWM
-TARGET_RECOVERY_FSTAB := device/doogee/x5max_pro/rootdir/root/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/doogee/x5max_pro/kernel
+TARGET_RECOVERY_FSTAB := device/gretel/hct6737m_65_n/rootdir/root/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/gretel/hct6737m_65_n/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP stuff
@@ -143,7 +140,7 @@ TW_USE_TOOLBOX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 BOARD_SEPOLICY_DIRS := \
-       device/doogee/x5max_pro/sepolicy
+       device/gretel/hct6737m_65_n/sepolicy
 
 # Use old sepolicy version
 POLICYVERS := 29
