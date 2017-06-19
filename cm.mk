@@ -1,17 +1,17 @@
 ## Specify phone tech before including full_phone
 
 # Release name
-PRODUCT_RELEASE_NAME := x5max_pro
+PRODUCT_RELEASE_NAME := hct6737m_65_n
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/doogee/x5max_pro/device_x5max_pro.mk)
+$(call inherit-product, device/gretel/hct6737m_65_n/device_hct6737m_65_n.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := x5max_pro
-PRODUCT_NAME := lineage_x5max_pro
-PRODUCT_BRAND := Doogee
-PRODUCT_MODEL := Doogee X5 Max Pro
-PRODUCT_MANUFACTURER := Doogee
+PRODUCT_DEVICE := hct6737m_65_n
+PRODUCT_NAME := lineage_hct6737m_65_n
+PRODUCT_BRAND := Gretel
+PRODUCT_MODEL := Gretel GT6000
+PRODUCT_MANUFACTURER := Gretel
