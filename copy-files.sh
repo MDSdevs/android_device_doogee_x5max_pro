@@ -2,8 +2,8 @@
 
 # Example of usage: copy-files.sh /home/decker/hdd/superrs-kitchen/superr_Doogee_x5_Max_Pro/system
 
-export DEVICE=x5max_pro
-export VENDOR=doogee
+export DEVICE=hct6737m_65_n
+export VENDOR=gretel
 
 if [ $# -eq 0 ]; then
   SRC=adb
