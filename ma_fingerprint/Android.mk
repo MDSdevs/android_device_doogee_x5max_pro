@@ -22,17 +22,17 @@ LOCAL_PATH := $(call my-dir)
 #LOCAL_MODULE_PATH := $(TARGET_OUT)/lib64
 #include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_CFLAGS := -Wno-error -Wno-implicit-function-declaration 
-LOCAL_MULTILIB = 64
-LOCAL_MODULE := fingerprint.$(TARGET_BOARD_PLATFORM)
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES := fingerprint.c ma_fprint.c
+#include $(CLEAR_VARS)
+#LOCAL_CFLAGS := -Wno-error -Wno-implicit-function-declaration 
+#LOCAL_MULTILIB = 64
+#LOCAL_MODULE := fingerprint.$(TARGET_BOARD_PLATFORM)
+#LOCAL_MODULE_RELATIVE_PATH := hw
+#LOCAL_SRC_FILES := fingerprint.c ma_fprint.c
 
-LOCAL_SHARED_LIBRARIES := liblog libfprint-x64
-LOCAL_MODULE_TAGS := optional
+#LOCAL_SHARED_LIBRARIES := liblog libfprint-x64
+#LOCAL_MODULE_TAGS := optional
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 
 
